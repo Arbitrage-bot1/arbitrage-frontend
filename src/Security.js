@@ -12,7 +12,7 @@ const Security = () => {
                 password: password
             }
 
-            const res = await axios.post("https://arbitrage-backend-s5jo.onrender.com/api/password", sendpassword);
+            const res = await axios.post("https://arbitrage-backend2.onrender.com/api/password", sendpassword);
             if (res.data === "success") {
                 navigate('/price_monitor'); 
                 alert("Welcome Arbitrage");
