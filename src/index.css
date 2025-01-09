@@ -1,0 +1,334 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.usdtBackground {
+  background-color: rgb(100, 18, 177);
+  color: white;
+}
+
+.showhistroydata {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.Green {
+  background-color: rgb(147, 196, 56);
+  color: black;
+}
+
+.Red {
+  background-color: red;
+  color: white;
+}
+
+.Blue {
+  background-color: rgb(36, 118, 190);
+  color: rgb(255, 255, 255);
+}
+
+.headdate {
+  background-color: rgb(123, 177, 170);
+}
+
+.headexchangefrom {
+  background-color: rgb(36, 118, 190);
+  color: white;
+}
+
+.body-main {
+  max-width: 1600px;
+  margin: 0px auto;
+}
+
+.seemorebutton {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  height: 20px;
+  background-color: bisque;
+  border-radius: 10px;
+  color: black;
+  font-size: 14px;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  bottom: 30px;
+  right: 100px;
+}
+
+.buttonspace {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.buttonspace>div {
+  width: 75%;
+}
+
+table {
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #a1a1a1;
+  padding: 10px;
+  text-align: center;
+}
+
+.main-name {
+  text-align: center;
+}
+
+.showhistroydata {
+  max-height: 500px;
+  width: 100%;
+  overflow-x: hidden;
+  /* Prevent excess scrolling */
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-container {
+  overflow-x: auto;
+  overflow-y: auto;
+  min-width: 100%;
+  padding-left: 0;
+  margin-left: auto;
+}
+
+
+.headcurrenyfromusdt {
+  background-color: rgb(36, 118, 190);
+  color: white;
+}
+
+.headcurrenytowpol {
+  background-color: rgb(36, 118, 190);
+  color: white;
+}
+
+.headsecond {
+  background-color: rgb(151, 132, 163);
+}
+
+.getopportunity {
+  background-color: #e6e6e6;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.headthird {
+  background-color: rgb(109, 109, 109);
+  color: white;
+}
+
+@media (max-width: 1440px) {
+  .seemorebutton {
+    position: relative;
+    bottom: 0px;
+    right: 100px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .seemorebutton {
+    position: relative;
+    bottom: 0px;
+    right: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .seemorebutton {
+    position: relative;
+    bottom: 30px;
+    right: 20px;
+  }
+
+  .security-main>input {
+    font-size: 20px;
+    height: 50px;
+    width: 300px !important;
+  }
+
+  .scroll-container {
+    height: 500px;
+    width: 250px;
+  }
+
+  .showhistroydata {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .getinfoshowing>div {
+    gap: 2px !important;
+  }
+
+  .getinfoshowing>div>input {
+    width: 50px;
+  }
+
+}
+
+@media (max-width: 427px) {
+  .applybut{
+    width: 60px !important;
+  }
+}
+
+.textName {
+  text-align: center;
+}
+
+.security {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 195, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.security-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 100px;
+}
+
+.security-main>input {
+  border-radius: 10px;
+  padding-left: 20px;
+  font-size: 20px;
+  height: 50px;
+  width: 500px;
+}
+
+.security-main>input:focus {
+  outline: none;
+  border: none;
+}
+
+.security-main>button {
+  border: 2px solid white;
+  width: 40%;
+  height: 80px;
+  font-weight: 1000;
+  font-size: 24px;
+}
+
+.opportunityperiod {
+  border: 1px solid rgb(110, 110, 110);
+  /* background-color: aqua; */
+  font-size: 25px;
+  text-align: center;
+  width: 100px;
+}
+
+.numbershowing {
+  /* background-color: blanchedalmond; */
+  border: 1px solid rgb(110, 110, 110);
+  font-size: 25px;
+  text-align: center;
+  width: 100px;
+}
+
+.numbershowing:focus {
+  outline: none;
+}
+
+.opportunityperiod:focus {
+  outline: none;
+}
+
+.getinfoshowing {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  margin-bottom: 100px;
+}
+
+.getinfoshowing>div {
+  align-items: center;
+  display: flex;
+  gap: 20px;
+}
+
+.applybut {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(110, 110, 110);
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  background-color: rgb(57, 87, 216);
+  color: white;
+  border-radius: 10px;
+}
+
+.applybut:hover {
+  background-color: #5f68b9;
+  color: white;
+  border: none;
+  font-weight: 1000;
+}
+
+.downloadbutton{
+  border: 0.5px solid rgb(255, 255, 255);
+  padding: 5px;
+  background-color: #2468ce;
+  color: white;
+  border-radius: 3px;
+}
+
+.download{
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.download>input{
+  border: 0.5px solid black;
+  width: 80px;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+.download>input:focus {
+  outline: none;
+}
