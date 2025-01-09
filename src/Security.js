@@ -11,7 +11,7 @@ const Security = () => {
             const sendpassword = {
                 password: password
             }
-
+// sdfs
             const res = await axios.post("https://arbitrage-backend2.onrender.com/api/password", sendpassword);
             if (res.data === "success") {
                 navigate('/price_monitor'); 
