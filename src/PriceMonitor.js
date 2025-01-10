@@ -72,7 +72,7 @@ const PriceMonitor = () => {
         let data = { number: number };
 
         try {
-            const res = await axios.post("https://arbitrage-backend2.onrender.com/api/history/gethistory", data);
+            const res = await axios.post("https://arbitrage-backend-2-j4su.onrender.com/api/history/gethistory", data);
             setLog(res.data);
         } catch (error) {
             console.error("Error during GET request:", error);
@@ -87,7 +87,7 @@ const PriceMonitor = () => {
 
         try {
 
-            await axios.post("https://arbitrage-backend2.onrender.com/api/saveData", data);
+            await axios.post("https://arbitrage-backend-2-j4su.onrender.com/api/saveData", data);
 
         } catch (error) {
             console.error("Error during GET request:", error);
@@ -206,7 +206,7 @@ const PriceMonitor = () => {
     //         };
 
     //         try {
-    //             await axios.post('https://arbitrage-backend2.onrender.com/api/logs', logEntry);
+    //             await axios.post('https://arbitrage-backend-2-j4su.onrender.com/api/logs', logEntry);
     //             console.log('Log saved to database:', logEntry);
     //         } catch (error) {
     //             console.error('Error saving log:', error.message);
@@ -236,7 +236,7 @@ const PriceMonitor = () => {
     //     };
 
     //     try {
-    //         await axios.post('https://arbitrage-backend2.onrender.com/api/logs', logEntry);
+    //         await axios.post('https://arbitrage-backend-2-j4su.onrender.com/api/logs', logEntry);
     //         console.log('Log saved to database:', logEntry);
     //     } catch (error) {
     //         console.error('Error saving log:', error.message);
@@ -261,7 +261,7 @@ const PriceMonitor = () => {
         let data = { downloadnumber: downloadnumber };
 
         try {
-            const response = await axios.post("https://arbitrage-backend2.onrender.com/api/download-excel", data,{
+            const response = await axios.post("https://arbitrage-backend-2-j4su.onrender.com/api/download-excel", data,{
                 responseType: "blob"
             });
 
