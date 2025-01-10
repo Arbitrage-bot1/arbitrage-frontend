@@ -12,7 +12,7 @@ const Security = () => {
                 password: password
             }
 // sdfs
-            const res = await axios.post("https://arbitrage-backend-2-j4su.onrender.com/api/password", sendpassword);
+            const res = await axios.post("https://arbitrage-backend2.onrender.com/api/password", sendpassword);
             if (res.data === "success") {
                 navigate('/price_monitor'); 
                 alert("Welcome Arbitrage");
@@ -23,7 +23,7 @@ const Security = () => {
             console.error("Error fetching password:", error);
         }
     };
-
+// sdfd
     const handleKeyDown = (e) => {
         if (e.key === "Enter") {
             compare(); 
