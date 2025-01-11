@@ -327,9 +327,9 @@ const PriceMonitor = () => {
                                     <td>{moment(item.time).format('YYYY-MM-DD HH:mm:ss')}</td>
                                     <td>{item.exchange_from}</td>
                                     <td className='usdtBackground'>{item.USDT1}</td>
-                                    <td>{item.WPOL1.toFixed(4)}</td>
+                                    <td>{item.WPOL1.toFixed(5)}</td>
                                     <td>{item.exchange_to}</td>
-                                    <td>{item.WPOL2.toFixed(4)}</td>
+                                    <td>{item.WPOL2.toFixed(5)}</td>
                                     <td className='usdtBackground'>{item.USDT2}</td>
                                     <td className={item.flag}>{item.profit_percentage}%</td>
                                     <td className={item.flag}>{item.flag}</td>
