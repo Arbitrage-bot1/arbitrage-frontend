@@ -318,10 +318,10 @@ const PriceMonitor = () => {
                         </thead>
                         <tbody>
                             {log.map((item, index) => {
-                                // if (item.profit_percentage > 0.8) {
-                                //     const audio = new Audio(soundFile);
-                                //     audio.play();
-                                // }
+                                if (item.profit_percentage > 0.6) {
+                                    const audio = new Audio(soundFile);
+                                    audio.play();
+                                }
                                 return (<tr>
                                     <td>{index + 1}</td>
                                     <td>{moment(item.time).format('YYYY-MM-DD HH:mm:ss')}</td>
